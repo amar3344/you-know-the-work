@@ -28,12 +28,11 @@ const App = () => (
           </div>
           <div className='profile-discription-container'>
             <div className='profile-name-container'>
-              <h1>CAROLINE THOMPSON</h1>
-              <p>ART DIRECTIOR</p>
+              <h1 className='name'>CAROLINE THOMPSON</h1>
+              <p className='designation'>ART DIRECTIOR</p>
             </div>
             <div className='profile-address'>
-              <p className='text'>Advertising campaigns are my forte.</p>
-              <p className='text'>I have been in the industry for 6 years.</p>
+              <p className='text'>Advertising campaigns are my forte. <br/> I have been in the industry for 6 years.</p>
               <div>
                 <p className='text'>Adress : Los Angeles,California</p>
                 <p className='text'>Phone : +(87) 834 2934 2344</p>
@@ -42,9 +41,8 @@ const App = () => (
             </div>
           </div>
         </div>
-        <hr className='horizontal-line'/>    
         
-
+{/* Adding Work Experiance */}
         <div className='profile-container'>
             <div className='profile'>
               <div>
@@ -54,21 +52,29 @@ const App = () => (
             </div>
             <ul className='unordered-list-container'>
               <li className='each-list'>
-                <p style={{fontSize:"14px"}}>2022-2023</p>
-                <p className='work-description'>Creative Minds Graphics Design Studio California * Senior Art Director <br/> Generating and developing ideas to present to the client</p>
+                <p style={{fontSize:"14px",padding:0,margin:0}}>2022-2023</p>
+                <div style={{marginLeft:50}}>
+                  <p className='work-description' style={{fontWeight:"bold"}}>Creative Minds Graphics Design Studio California * Senior Art Director</p>
+                  <p className='work-description'>Generating and developing ideas to present to the client</p>
+                </div>  
               </li>
               <li className='each-list'>
                 <p style={{fontSize:"14px"}}>2021-2022</p>
-                <p className='work-description'>Mega Giants Publishing and Studio * Junior Art Director <br/> Working on design to produce an effective advertising campaign</p>
+                <div style={{marginRight:70}}>
+                    <p className='work-description' style={{fontWeight:"bold"}}>Mega Giants Publishing and Studio * Junior Art Director </p>
+                    <p className='work-description'>Working on design to produce an effective advertising campaign</p>
+                </div>
               </li>
               <li className='each-list'>
                 <p style={{fontSize:"14px"}}>2020-2021</p>
-                <p className='work-description'>Big Ideas Inc * Assistant Art Director <br/> Commissioning specialists,such as artists,to work on projects</p>
+                <div style={{marginRight:80}}>
+                  <p className='work-description' style={{fontWeight:"bold"}}>Big Ideas Inc * Assistant Art Director.</p>
+                  <p className='work-description'>Commissioning specialists,such as artists,to work on projects.</p>
+                </div>
               </li>
             </ul>
         </div>
-        <hr className='horizontal-line'/>
-
+{/* Adding Skills And Awards */}
         <div className='profile-container'>
           <div className='profile'>
             <div>
@@ -76,67 +82,78 @@ const App = () => (
             </div>
             <p className='profile-text'>SKILLS & AWARDS</p>
           </div>
-          <ul className='unordered-list-container border-right'>
+          <div className='border-bottom'>
+          <ul className='border-right'>
             <li className='each-list'>
               <p>UI/UX</p>
+              <div className='skill-score'>
               <RxDotFilled/>
               <RxDotFilled/>
               <RxDotFilled/>
+              </div>              
             </li>
             <li className='each-list'>
               <p>Growth Marketing</p>
+              <div className='skill-score'>
               <RxDotFilled/>
               <RxDotFilled/>
               <RxDotFilled/>
               <RxDotFilled/>
               <RxDotFilled/>
+              </div>              
             </li>
             <li className='each-list'>
               <p>Typography</p>
+              <div className='skill-score'>
               <RxDotFilled/>
               <RxDotFilled/>
+              </div>              
             </li>
             <li className='each-list'>
               <p>Video Production</p>
+              <div className='skill-score'>
               <RxDotFilled/>
               <RxDotFilled/>
               <RxDotFilled/>
               <RxDotFilled/>
               <RxDotFilled/>
+              </div>              
             </li>
             <li className='each-list'>
               <p>Print Design</p>
+              <div className='skill-score'>
               <RxDotFilled/>
               <RxDotFilled/>
               <RxDotFilled/>
+              </div>              
             </li>
           </ul>
-          <ul className='unordered-list-container'>
+          <ul className='achievements-container'>
             <li className='each-list'>
               <p>2019</p>
               <div>
-                <p>Suiton Design Awards</p>
-                <p>10 Graphic Designer</p>
+                <p className='text'>Suiton Design Awards</p>
+                <p className='text'>10 Graphic Designer</p>
               </div>
             </li>
             <li className='each-list'>
               <p>2019</p>
-              <div>
-                <p>Graphic London Award</p>
-                <p>Winning Entry: Poster design</p>
+              <div style={{marginRigth:20}}>
+                <p className='text'>Graphic London Award</p>
+                <p className='text'>Winning Entry: Poster design</p>
               </div>
             </li>
             <li className='each-list'>
-              <p>2019</p>
-              <div>
-                <p>LA Creatives Award</p>
-                <p>Winning Entry: Ad campaign</p>
+              <p style={{marginRight:40}}>2019</p>
+              <div >
+                <p className='text'>LA Creatives Award</p>
+                <p className='text'>Winning Entry: Ad campaign</p>
               </div>
             </li>
           </ul>
+          </div>
         </div>
-        <hr className='horizontal-line'/>
-
+{/* Adding Interests */}
         <div className='profile-container'>
           <div  className='profile'>
             <div>
@@ -171,8 +188,7 @@ const App = () => (
             </li>
           </ul>
         </div>  
-        <hr className='horizontal-line'/>
-
+{/* Adding Education  */}
         <div className='profile-container'>
           <div className='profile'>
             <div>
@@ -182,7 +198,7 @@ const App = () => (
           </div>
           <ul className='unordered-list-container'>
             <li className='each-list'>
-              <p>2016-2020</p>
+              <p style={{marginRight:35}}>2016-2020</p>
               <div>
               <p>Alabama College of Design and Technology * Cum Laude</p>
               <p>Bachelor of Fine Arts Major in Advertising</p>
@@ -190,14 +206,13 @@ const App = () => (
             </li>
             <li className='each-list'>
               <p>2013-2016</p>
-              <div>
+              <div style={{marginRight:48}}>
               <p>Helena All Girls Senior High School * Valedictorian</p>
               <p>President of Art and Design Club</p>
               </div>  
             </li>
           </ul>
         </div>  
-        <hr className='horizontal-line'/>
     </div>
   </div>
 )

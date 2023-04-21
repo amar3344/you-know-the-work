@@ -14,7 +14,7 @@
 }
 
 .resume-container{
-  width: 700px;
+  width: 750px;
   height: 100%;
   background-color: #fa87a4;
   padding: 20px;
@@ -34,7 +34,7 @@
 .profile div{
   border: 3px solid #0c0341;
   border-radius: 50%;
-  font-size: 80px;
+  font-size: 50px;
   margin: 5px 0px;
   padding: 5px;
   display: flex;
@@ -49,23 +49,45 @@
 
 }
 
+
 .profile-discription-container{
   display: flex;
   align-items: center;
-  margin: 15px;
-  height: 200px;
+  margin: 0px 15px ;
+  border-bottom: 3px solid #0c0341;
+  height: 90px;
+}
+
+.name{
+  margin: 0px;
+  padding: 0px;
+}
+
+.designation{
+  margin: 0px;
+  padding: 0px;
+}
+
+.text{
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
 }
 
 .profile-name-container{
   border-right: 3px solid #0c0341;
-  padding: 10px;
-  height: 100%;
+  width: 200px;
+  margin-left: 50px;;
 }
 
 .profile-address{
   padding: 10px;
   min-width: 200px;
-  max-width: 300px;
+  max-width: 350px;
+}
+
+.profile-address div{
+  margin: 5px 0px;
 }
 
 .horizontal-line{
@@ -76,6 +98,7 @@
 
 .unordered-list-container{
   list-style: none;
+  border-bottom: 3px solid #0c0341;
   
 }
 
@@ -84,6 +107,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 10px 0px 0px 0px;
+  padding: 0px;
 }
 
 /* .each-list ::first-line{
@@ -91,8 +115,9 @@
 } */
 
 .work-description{
-  margin:0px 0px 0px 50px;
   font-size: 14px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .border-right{
@@ -118,4 +143,20 @@
 
 .each-logo{
   margin: 0px 0px 0px 20px;
+}
+
+.border-bottom{
+  border-bottom: 3px solid #0c0341;
+  display: flex;
+  align-items: center;
+  height: 300px;
+}
+
+.skill-score{
+  margin: 0px 0px 0px 10px;
+  font-size: 20px;
+}
+
+.achievements-container{
+
 }
